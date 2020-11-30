@@ -4,7 +4,11 @@
 layout: home
 ---
 <b>Hi there!</b>
-<div id="test">Hello</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KB34RCMFYY"></script>
 <script>
-  document.getElementById('test').innerText = "this was edited"
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KB34RCMFYY');
 </script>
